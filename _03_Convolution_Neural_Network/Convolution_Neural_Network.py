@@ -202,4 +202,3 @@ def main():
     model.load_state_dict(torch.load(parent_dir + '/pth/model.pth', map_location='cpu'))
     return model
 
-#start()
