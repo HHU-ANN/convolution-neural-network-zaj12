@@ -195,7 +195,7 @@ def start():
     torch.save(model.state_dict(), '../pth/model.pth')
 
 def main():
-    # the fiveth commit
+    # the sixth commit
     model = Vgg() # 若有参数则传入参数
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(current_dir)
