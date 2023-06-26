@@ -16,7 +16,6 @@ from torch.autograd import Variable
 from torchvision import transforms
 import time
 import os
-import torch.backends.cudnn as cudnn
 
 
 def read_data():
@@ -201,4 +200,3 @@ def main():
     parent_dir = os.path.dirname(current_dir)
     model.load_state_dict(torch.load(parent_dir + '/pth/model.pth', map_location='cpu'))
     return model
-

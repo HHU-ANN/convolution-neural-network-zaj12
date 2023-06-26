@@ -25,10 +25,6 @@ def test():
     _, predicted = torch.max(outputs.data, 1)
     return label, predicted.item()
 
-for i in range(10):
-    label, pred = test()
-    print(f'label = {label}, pred = {pred}')
-
 def test0():
     label, pred = test()
     assert label == pred
